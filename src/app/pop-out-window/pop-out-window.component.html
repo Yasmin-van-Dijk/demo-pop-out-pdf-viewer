@@ -1,0 +1,5 @@
+<div #popOutWindowWrapper>
+  <button *ngIf="!windowIsPoppedOut" (click)="openPopOutWindow()">open</button>
+  <button *ngIf="windowIsPoppedOut" (click)="closePopOutWindow()">close</button>
+  <ng-content></ng-content>
+</div>
